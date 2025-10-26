@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style ="text-align: center;">Student Registration Form</h2>
+    <form action="submit.php" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"  placeholder="Full Name"> <br>
+        <label for="Father's Name">Father's Name</label>
+        <input type="text" id="father's name" name="father's name" placeholder="Father's Full Name"> <br>
+        <label for="Mothers's Name">Mothers's Name</label>
+        <input type="text" id="mother's name" name="mother's name" placeholder="Mother's Full Name"> <br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"> <br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="Gender" value="Male">Male
+<input type="radio" name="Gender" value="Female">FeMale        
+<input type="radio" name="Other" value="Other">Other  <br>
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address here"></textarea> <br>
+        <label for="course">Course:</label>
+        <select id="course" name="course">
+            <option value="BSc">BSc</option>
+            <option value="BA">BA</option>
+            <option value="BCom">BCom</option>
+            <option value="BTech">BTech</option>
+        </select> <br>
+        <label for="Contact">Contact:</label>
+        <input type="tel" id="contact" name="contact" placeholder="Enter your contact number"> <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"> <br>
+        <label for="photo">Upload Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*"> <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+
+
+
+        
+    </form>
+
+
+
+</html>
