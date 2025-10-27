@@ -1,0 +1,41 @@
+    <h1 style="text-align: center">Resume</h1>
+    <p>welcome to resume. This page demonstrate the use of <i>HTML</i> formating, <u>list</u>, and special
+        characters , </p>.
+    <h2>Achievements</h2>
+    <ol>
+        <li> Secured many A certificate in field of technology</li>
+        <li>Done more than three internships</li>
+        <li>Speaker at university</li>
+        
+        </li>
+        <h2>Experienced</h2>
+        <ul>
+            <li> experience of more than three years as an intern,/li>
+            
+            <li> used to perform teaching skills on regular basis</li>
+         
+        </ul>
+        <h2>Course description</h2>
+        <h3>BA</h3>
+        <p>Have done BA from psychology at <b/> sunbeam Varanasi </b></p>
+<br>
+<p>Also participated in Olympiad for three times</p>
+<br>
+
+<h2> Qualifications </h2>
+<ol>
+<li>10 $ 12 passed from CBSE Board</li>
+<li>gradauated from sunbeam Varanasi </li>
+<ol/>
+
+
+
+
+
+
+       
+        
+
+</html>   
+
+
