@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 6 - Cotton T-shirt Product Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .image-box {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        img {
+            width: 320px;
+            border-radius: 12px;
+            border: 1px solid #ccc;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #e63946;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .btn {
+            display: block;
+            width: 200px;
+            margin: 15px auto;
+            background: #0077b6;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        ul {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Experiment 6 - Cotton T-shirt Product Page</h1>
+
+<div class="container">
+
+    <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+             alt="Cotton T-shirt">
+    </div>
+
+    <div class="price">₹499 Only</div>
+
+    <a href="#" class="btn">Buy Now</a>
+
+    <h2>Description</h2>
+    <p>
+        This cotton T-shirt is designed for everyday comfort.  
+        It is made from 100% pure breathable cotton, suitable for summer as well as casual outings.  
+        The material is soft, lightweight, and skin-friendly.
+    </p>
+
+    <h2>Features</h2>
+    <ul>
+        <li>100% Pure Cotton</li>
+        <li>Available in all sizes – S, M, L, XL</li>
+        <li>Soft, Durable & Lightweight</li>
+        <li>Perfect for daily wear</li>
+        <li>Machine Washable</li>
+    </ul>
+
+</div>
+
+</body>
+</html>
