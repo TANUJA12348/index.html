@@ -1,0 +1,351 @@
+<html lang="en">
+<head>!DOCTYPE html>
+<
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Wellness & Support System</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        /* --- Universal Styles & Variables --- */
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --background-color: #f8f9fa;
+            --surface-color: #ffffff;
+            --text-color: #343a40;
+            --heading-color: #212529;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* --- Header & Navigation --- */
+        header {
+            background-color: var(--surface-color);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        nav a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            background: linear-gradient(rgba(0, 123, 255, 0.6), rgba(0, 123, 255, 0.6)), url(https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop) center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 6rem 1rem;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            background-color: var(--surface-color);
+            color: var(--primary-color);
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e9ecef;
+        }
+        
+        /* --- Features / Services Section --- */
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 4rem 1rem;
+            flex-wrap: wrap;
+        }
+
+        .feature-card {
+            background: var(--surface-color);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .feature-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* --- NEW SECTION: Common Challenges --- */
+        .common-challenges {
+            padding: 4rem 0;
+            background-color: #eef2f7;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.2rem;
+            color: var(--heading-color);
+        }
+        
+        .challenges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .challenge-card {
+            background: var(--surface-color);
+            padding: 1.5rem;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .challenge-card i {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        
+        .challenge-card h4 {
+            font-size: 1.1rem;
+            color: var(--heading-color);
+        }
+        
+        /* --- NEW SECTION: Testimonials --- */
+        .testimonials {
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+        
+        .testimonial-quote {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #555;
+        }
+        
+        .testimonial-author {
+            margin-top: 1rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        /* --- NEW SECTION: Final Call to Action --- */
+        .cta {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+        
+        .cta .btn {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        
+        .cta .btn:hover {
+            background-color: #f0f4f8;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--heading-color);
+            color: #ccc;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .footer-links a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        
+        .footer-disclaimer {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        /* --- Responsive Design for Mobile --- */
+        @media (max-width: 768px) {
+            header .container { flex-direction: column; gap: 1rem; }
+            .hero h2 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+            .features { flex-direction: column; align-items: center; }
+        }
+
+    </style>
+</head>
+<body>  
+    <header>
+        <div class="container">
+            <a href="#" class="logo">WellnessHub</a>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Resources</a>
+                <a href="#">Counselling</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>You Are Not Alone ❤</h2>
+            <p>A safe space for students to find support, guidance, and the tools to navigate the pressures of college life.</p>
+            <a href="support.html" class="btn">Explore Support Options</a>
+        </section>
+
+        <section class="features container">
+            <div class="feature-card">
+                <i class="fas fa-tasks"></i>
+                <h3>🧠 Self-Assessment</h3>
+                <p>Take a confidential quiz to check your stress, anxiety, and mood levels.</p>
+            </div>
+             <div class="feature-card">
+                <i class="fas fa-book-open"></i>
+                <h3>📚 Resources Hub</h3>
+                <p>Access articles, videos, and coping strategies tailored for students.</p>
+            </div>
+             <div class="feature-card">
+                <i class="fas fa-comments"></i>
+                <h3>💬 Get Counseling</h3>
+                <p>Book a confidential session with professional, empathetic counselors.</p>
+            </div>
+        </section>
+        
+        <section class="common-challenges">
+            <div class="container">
+                <h2 class="section-title">Common Challenges Students Face</h2>
+                <div class="challenges-grid">
+                    <div class="challenge-card">
+                        <i class="fas fa-brain"></i>
+                        <div>
+                            <h4>Managing Exam Stress</h4>
+                            <p>Learn techniques to handle pressure and perform your best.</p>
+                        </div>
+                    </div>
+                    <div class="challenge-card">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <h4>Overcoming Loneliness</h4>
+                            <p>Find ways to connect and build meaningful relationships.</p>
+                        </div>
+                    </div>
+                    <div class="challenge-card">
+                        <i class="fas fa-moon"></i>
+                        <div>
+                            <h4>Improving Sleep</h4>
+                            <p>Discover strategies for a more restful and restorative night.</p>
+                        </div>
+                    </div>
+                    <div class="challenge-card">
+                        <i class="fas fa-fire"></i>
+                        <div>
+                            <h4>Avoiding Burnout</h4>
+                            <p>Balance your academic and personal life effectively.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                 <h2 class="section-title">Student Stories</h2>
+                 <p class="testimonial-quote">"Using the resources here helped me realize it was okay to feel overwhelmed, and gave me the tools to start feeling better. It's a lifesaver."</p>
+                 <p class="testimonial-author">- Anonymous Student</p>
+            </div>
+        </section>
+        
+        <section class="cta">
+            <div class="container">
+                <h2 class="section-title" style="color: white;">Ready to Take the First Step?</h2>
+                <p>Your journey to better mental wellness starts here. Explore our resources or book a session today.</p>
+                <br>
+                <a href="#" class="btn">Book a Confidential Session</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms of Service</a> |
+                <a href="#">Contact Us</a>
+            </div>
+            <p class="footer-disclaimer">© 2025 WellnessHub. All rights reserved. This service is for support and guidance, not a replacement for emergency medical services.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
