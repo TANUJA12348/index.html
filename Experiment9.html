@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Products</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1{
+            margin-bottom: 20px;
+        }
+
+        /* Main wrapper responsive */
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        /* Card responsive */
+        .card{
+            width: 280px;
+            border: 2px solid rgb(9, 9, 9);
+            border-radius: 10px;
+            box-shadow: 4px 4px 18px rgba(0,0,0,0.4);
+            overflow: hidden;
+            transition: 0.3s;
+            background: #fff;
+        }
+
+        .card:hover{
+            box-shadow: 0 8px 16px black;
+            transform: scale(1.02);
+        }
+
+        img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover; /* keep images clean and equal */
+            border-radius: 10px 10px 0 0;
+        }
+
+        .desc{
+            padding: 15px;
+            text-align: left;
+        }
+
+        .stars{
+            font-size: 14px;
+            color: rgb(0, 0, 0);
+            margin-top: 5px;
+        }
+
+        #price{
+            color: green;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        #dis{
+            color: rgb(100, 100, 100);
+        }
+
+        #add{
+            margin-top: 10px;
+            width: 100%;
+            padding: 8px;
+            background-color: rgb(244, 219, 1);
+            border-radius: 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #add:hover{
+            background-color: rgb(46, 249, 1);
+        }
+
+        /* Responsive for mobile */
+        @media (max-width: 600px){
+            .card{
+                width: 90%;
+            }
+            img{
+                height: 200px;
+            }
+        }
+
+        /* Responsive for tablets */
+        @media (max-width: 900px){
+            .card{
+                width: 45%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Responsive Products</h1>
+
+    <div class="main">
+<div class="card">
+       <img src="tshirt.jpg"/>
+       <div class="desc"><hr>
+         <h3>Allen Solly</h3>
+         <div id="last">
+        <p>Men's Cotton Regular fit T-shirt
+     <div class="stars">5.0★★★★★(55k)</div> 
+     </div>
+     <p id="price">price:&#8377;899    <del id="dis">&#8377;1299</del></p>
+    <div id="add">Add To Card</div></p>
+       </div>
+       </div>
+
+       <div class="card">
+       <img src="t2.jpg.webp"/>
+       <div class="desc"><hr>
+        <h3>Peter England</h3>
+        <div id="last">
+        <p>Fit solid peter' t-shirt with comfortability
+     <div class="stars">5.0★★★★★ </div>
+     </div> 
+     <p id="price">price:&#8377;999    <del id="dis">&#8377;2299</del></p>
+    <div id="add">Add To Card</div></p>
+       </div>
+       </div>
+<div class="card">
+       <img src="t3.jpg.webp"/>
+       <div class="desc"><hr>
+        <h3>American Crew</h3>
+        <div id="last">
+        <p>Men's Regular fit t-shirt 
+     <div class="stars">5.0★★★★★(55k)</div> 
+        </div>
+     <p id="price">price:&#8377;1999    <del id="dis">&#8377;3299</del></p>
+    <div id="add">Add To Card</div></p>
+       </div>
+       </div>
+
+       <div class="card">
+       <img src="t5.jpg"/>
+       <div class="desc"><hr>
+        <h3>Louis Philippe</h3>
+        <div id="last">
+        <p>Men's Cotton Slim solid fit t-shirt
+     <div class="stars">5.0★★★★★(55k)</div> 
+        </div>
+     <p id="price">price:&#8377;999    <del id="dis">&#8377;1399</del></p>
+    <div id="add">Add To Card</div></p>
+       </div>
+       </div>
+
+       <div class="card">
+       <img src="t6.webp"/>
+       <div class="desc"><hr>
+        <h3>Van heusen</h3>
+        <div id="last">
+        <p>Men's Cotton solid slim  fit t-shirt 
+     <div class="stars">5.0★★★★★(55k)</div> 
+        </div>
+     <p id="price">price:&#8377;699    <del id="dis">&#8377;1199</del></p>
+    <div id="add">Add To Card</div></p>
+       </div>
+       </div>
+ <div class="card">
+       <img src="t7.jpg"/>
+       <div class="desc"><hr>
+        <h3>Nobero</h3>
+        <div id="last">
+        <p>Men's Cotton Regular fit T-shirt
+     <div class="stars">5.0★★★★★(55k)</div> 
+        </div>
+     <p id="price">price:&#8377;999    <del id="dis">&#8377;1299</del></p>
+    <div id="add">Add To Card</div></p>
+       </div>
+       </div>
+        <div class="card">
+       <img src="t8.png.webp"/>
+       <div class="desc"><hr>
+        <h3>Reebok</h3>
+        <div id="last">
+        <p>Fit solid peter' t-shirt with comfortability
+     <div class="stars">5.0★★★★★ </div> 
+        </div>
+     <p id="price">price:&#8377;999    <del id="dis">&#8377;2299</del></p>
+    <div id="add">Add To Card</div></p>
+       </div>
+       </div>
+
+
+       <div class="card">
+       <img src="t9.jpg"/>
+       <div class="desc"><hr>
+        <h3>Alan Jones Clothing </h3>
+        <div id="last">
+        <p>Men's Regular fit t-shirt 
+     <div class="stars">5.0★★★★★(55k)</div> 
+        </div>
+     <p id="price">price:&#8377;1999    <del id="dis">&#8377;3299</del></p>
+    <div id="add">Add To Card</div></p>
+       </div>
+       </div>
+
+       <div class="card">
+       <img src="t10.jpg"/>
+       <div class="desc"><hr>
+        <h3>Godfrey</h3>
+        <div id="last">
+        <p>Men's Cotton Slim solid fit t-shirt
+     <div class="stars">5.0★★★★★(55k)</div> 
+        </div>
+     <p id="price">price:&#8377;999    <del id="dis">&#8377;1399</del></p>
+    <div id="add">Add To Card</div></p>
+       </div>
+       </div>
+<div class="card">
+       <img src="t11.jpg"/>
+       <div class="desc"><hr>
+        <h3>Damensch</h3>
+        <div id="last">
+        <p>Men's Cotton solid slim  fit t-shirt 
+     <div class="stars">5.0★★★★★(55k)</div> 
+        </div>
+     <p id="price">price:&#8377;699    <del id="dis">&#8377;1199</del></p>
+    <div id="add">Add To Card</div></p>
+       </div>
+       </div>
+         </div>
+    
+</body>
+</html>
