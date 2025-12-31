@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>New Year Celebration Card</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#000,#1a1a1a);
+    font-family:Segoe UI,sans-serif;
+    color:white;
+}
+.card{
+    width:340px;
+    padding:25px;
+    text-align:center;
+    background:rgba(0,0,0,0.85);
+    border-radius:20px;
+    border:2px solid gold;
+    box-shadow:0 0 25px gold;
+    animation:zoom 1.2s;
+}
+h2{color:gold;}
+#countdown{margin:15px 0;font-size:20px;color:#ffd700;}
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border:none;
+    border-radius:10px;
+    outline:none;
+}
+textarea{height:70px;resize:none;}
+button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:20px;
+    background:gold;
+    font-weight:bold;
+    cursor:pointer;
+}
+button:hover{background:#ffcc00;}
+#result{
+    margin-top:15px;
+    font-size:18px;
+    color:#00ffcc;
+}
+.footer{
+    margin-top:20px;
+    font-size:13px;
+    color:#aaa;
+}
+@keyframes zoom{
+    from{opacity:0;transform:scale(0.7);}
+    to{opacity:1;transform:scale(1);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>🎉 Countdown to 2026 🎉</h2>
+    <div id="countdown">Loading...</div>
+
+    <input type="text" id="name" placeholder="Enter your name">
+    <textarea id="wish" placeholder="Write your New Year wish..."></textarea>
+
+    <button onclick="launch()">Launch Celebration</button>
+
+    <div id="result"></div>
+
+    <div class="footer">✨ Created by Tanuja Singh ✨</div>
+</div>
+
+<script>
+const targetDate=new Date("January 1, 2026 00:00:00").getTime();
+setInterval(()=>{
+    let now=new Date().getTime();
+    let diff=targetDate-now;
+    let d=Math.floor(diff/(1000*60*60*24));
+    let h=Math.floor((diff/(1000*60*60))%24);
+    let m=Math.floor((diff/(1000*60))%60);
+    let s=Math.floor((diff/1000)%60);
+    document.getElementById("countdown").innerHTML=
+    d+"d : "+h+"h : "+m+"m : "+s+"s";
+},1000);
+
+function launch(){
+    let name=document.getElementById("name").value;
+    let wish=document.getElementById("wish").value;
+    if(name==""||wish==""){
+        alert("Please fill all details 😊");
+        return;
+    }
+    document.getElementById("result").innerHTML=
+    "🎆 Happy New Year 2026, <b>"+name+
+    "</b>!<br>💖 "+wish;
+}
+</script>
+
+</body>
+</html>
